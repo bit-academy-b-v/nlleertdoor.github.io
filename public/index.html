@@ -26,6 +26,8 @@
         gtag('js', new Date());
 
         gtag('config', 'G-GMSFPZFWTT');
+
+        gtag('config', 'AW-441474792');
     </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -43,6 +45,21 @@
     })(window, document, 'script', 'dataLayer', 'GTM-MFZDMWC');
     </script>
     <!-- End Google Tag Manager -->
+    <!-- Event snippet for Aanmelding conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-441474792/M2tLCIjV_5ECEOi9wdIB',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 <body class="antialiased overflow-hidden">
 <noscript>
@@ -84,7 +101,7 @@
                 <div class="hidden md:block">
                     <ul class="flex flex-">
                         <li class="nav-item px-2 signup">
-                            <a class="text-gray-900 px-3 py-2 bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold transition duration-500 ease-in-out cursor-pointer"
+                            <a onclick="gtag_report_conversion();" class="text-gray-900 px-3 py-2 bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold transition duration-500 ease-in-out cursor-pointer"
                                href="/#inschrijven">Schrijf je
                                 in</a>
                         </li>
@@ -122,7 +139,7 @@
                                href="/#faq">Veelgestelde vragen</a>
                         </li>
                         <li class="signup py-4 border-t border-gray-200 p-4">
-                            <a class=" px-3 py-2 bg-yellow-500 rounded border border-yellow-600 shadow font-semibold block"
+                            <a onclick="gtag_report_conversion();" class=" px-3 py-2 bg-yellow-500 rounded border border-yellow-600 shadow font-semibold block"
                                href="/#inschrijven">Schrijf je
                                 in</a>
                         </li>
@@ -143,7 +160,7 @@
                         href="https://www.hoewerktnederland.nl/werknemen/leren-en-ontwikkelen" target="_blank"
                         rel="nofollow" class="underline">NL Leert Door</a> subsidie. </p>
             <div class="flex justify-center items-center flex-col">
-                <a class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold px-6 py-2 inline-block transition duration-500 ease-in-out cursor-pointer text-xl"
+                <a onclick="gtag_report_conversion();" class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold px-6 py-2 inline-block transition duration-500 ease-in-out cursor-pointer text-xl"
                    href="/#inschrijven">Schrijf
                     je in</a>
                 <small class="capitalize mt-2 text-gray-700">Deze subsidie is alleen beschikbaar voor zzp'ers of mensen in loondienst.</small>
@@ -474,7 +491,7 @@
                 <p class="mb-0 text-gray-700">Iets voor jou?</p>
             </div>
 
-            <a href="/#inschrijven"
+            <a href="/#inschrijven" onclick="gtag_report_conversion();"
                class="px-4 btn btn-secundary bg-green-500 rounded text-white font-semibold border border-green-700 shadow py-2 hover:bg-green-600">
                 Schrijf je in</a>
         </div>
@@ -1047,7 +1064,7 @@
                 <p class="text-md md:text-xl lg:text-lg pt-4 pb-8 text-gray-800">Bij ons krijg je een vliegende
                     start!</p>
                 <div class="flex justify-center items-center flex- mb-2">
-                    <a class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 hover:border-yellow-700 shadow font-semibold px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out"
+                    <a onclick="gtag_report_conversion();" class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 hover:border-yellow-700 shadow font-semibold px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out"
                        href="/#inschrijven">Schrijf je in</a>
                     <a href="mail:info@bit-academy.nl"
                        class="rounded border border-gray-700 hover:bg-blue-300 px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out">Neem
